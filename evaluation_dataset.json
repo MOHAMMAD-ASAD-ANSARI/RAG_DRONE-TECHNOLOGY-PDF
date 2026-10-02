@@ -1,0 +1,192 @@
+[
+  {
+    "question": "What are the three primary types of drones described in the document, and what range of configurations is included under multirotors?",
+    "ground_truth_chunks": [25, 26],
+    "ground_truth_answer": "The three primary types are fixed-wing, multirotor, and hybrid drones. Multirotors range from tricopters to octocopters."
+  },
+  {
+    "question": "What forces act on a drone during flight, and what is the direction or function of each force?",
+    "ground_truth_chunks": [27],
+    "ground_truth_answer": "Weight acts downward, lift acts upward, thrust moves the aircraft forward, and drag acts backward to resist thrust."
+  },
+  {
+    "question": "What are the three principal axes of a drone, and how are they oriented?",
+    "ground_truth_chunks": [27],
+    "ground_truth_answer": "Roll is along the longitudinal front-back axis, pitch is along the lateral left-right axis, and yaw is along the perpendicular top-bottom axis."
+  },
+  {
+    "question": "How does a hexacopter maintain zero resultant torque when all its rotors operate at the same angular speed?",
+    "ground_truth_chunks": [28],
+    "ground_truth_answer": "Three rotors rotate clockwise and three rotate counterclockwise. Their opposing reaction torques cancel, resulting in zero resultant torque when they operate at the same angular speed."
+  },
+  {
+    "question": "How is forward movement of a hexacopter achieved?",
+    "ground_truth_chunks": [28],
+    "ground_truth_answer": "The power of the front motor is reduced, causing the drone to tilt forward. The rotor thrust then moves the drone forward."
+  },
+  {
+    "question": "How are yaw, roll, and pitch controlled in the drone described in the document?",
+    "ground_truth_chunks": [29, 30],
+    "ground_truth_answer": "Yaw is controlled by changing the speeds of the regularly and counter-rotating motors, reducing counter-torque and causing rotation. Roll is controlled by increasing the speed of one motor while decreasing the opposite motor. Pitch is controlled similarly to roll using the second set of motors."
+  },
+  {
+    "question": "What are the main objectives of the drone project?",
+    "ground_truth_chunks": [30],
+    "ground_truth_answer": "The objectives include studying UAV flight aerodynamics and design, designing a hexacopter frame using CAD, selecting and studying propellers, studying and fabricating motors, implementing flight-controller software, integrating sensors, designing a battery pack with BMS, and conducting post-flight analysis."
+  },
+  {
+    "question": "What is the role of the flight control system in a drone?",
+    "ground_truth_chunks": [31],
+    "ground_truth_answer": "The flight control system converts control commands into appropriate signals for the motors and is responsible for flight stability, navigation, and autopilot. It coordinates the control of the propellers to produce the desired motion."
+  },
+  {
+    "question": "What sensors are associated with the drone's flight control system, and what additional sensors can be used for collision avoidance?",
+    "ground_truth_chunks": [31],
+    "ground_truth_answer": "Typical sensors include GPS, gyro compass, and barometer. Lidar and radar can also be integrated for collision avoidance."
+  },
+  {
+    "question": "What are the three major subsystems of a drone and what is the primary function of each?",
+    "ground_truth_chunks": [32],
+    "ground_truth_answer": "The three subsystems are the actuating system, power system, and controller system. The actuating system provides lift and manoeuvring, the power system provides power to motors, sensors, and the control system, and the controller system consists of the flight controller, onboard computer, and collision-avoidance sensors."
+  },
+  {
+    "question": "What components constitute the actuating system of the drone?",
+    "ground_truth_chunks": [32, 33],
+    "ground_truth_answer": "The actuating system consists of the motor stator, motor rotor, electronic speed controllers, propellers, bearings, and windings."
+  },
+  {
+    "question": "How does the flight controller interact with the actuating system?",
+    "ground_truth_chunks": [32, 33],
+    "ground_truth_answer": "The flight controller receives input from a manual operator or autopilot and provides input data to the ESCs, which control the motors for flying or hovering."
+  },
+  {
+    "question": "What parameters are important when selecting a battery for a drone?",
+    "ground_truth_chunks": [34],
+    "ground_truth_answer": "Important parameters include capacity, voltage, discharge rate, dimensions, and net weight. Activation time, charging time, lifespan, and cost also affect battery selection."
+  },
+  {
+    "question": "Why does a drone battery experience continuously varying loads?",
+    "ground_truth_chunks": [34],
+    "ground_truth_answer": "Different drone components have different voltage and load requirements, while different mission phases such as takeoff, landing, hovering, and information gathering have different power profiles."
+  },
+  {
+    "question": "What does an IMU provide to a drone, and which sensors contribute to its measurements?",
+    "ground_truth_chunks": [35],
+    "ground_truth_answer": "An IMU combines information from gyroscopes, accelerometers, and magnetometers to provide measurements used to calculate the UAV's orientation and velocity."
+  },
+  {
+    "question": "How can GPS information improve the measurements obtained from an IMU?",
+    "ground_truth_chunks": [35],
+    "ground_truth_answer": "Information from the IMU can be combined with GPS information to further increase the accuracy of the calculations."
+  },
+  {
+    "question": "What is the role of the flight controller in navigation and trajectory management?",
+    "ground_truth_chunks": [36],
+    "ground_truth_answer": "The flight controller is the core of navigation and flight management. It manages flight planning, verifies the designated trajectory against the actual trajectory in real time, and uses sensor data to keep the drone on its designated trajectory."
+  },
+  {
+    "question": "What are the three main categories of components in an autonomous aerial vehicle?",
+    "ground_truth_chunks": [37],
+    "ground_truth_answer": "The three main categories are the aerial platform, ground control station (GCS), and communication system."
+  },
+  {
+    "question": "What components are included in the aerial platform of an autonomous aerial vehicle?",
+    "ground_truth_chunks": [37],
+    "ground_truth_answer": "The aerial platform includes the airframe, navigation system, power system, and payload, including sensors and camera."
+  },
+  {
+    "question": "What factors must an airframe design balance?",
+    "ground_truth_chunks": [37],
+    "ground_truth_answer": "The airframe design must balance portability or size with endurance while accounting for the weight of the battery, propulsion, communication, and control systems."
+  },
+  {
+    "question": "What characteristics should drone airframe construction materials possess?",
+    "ground_truth_chunks": [38],
+    "ground_truth_answer": "They should have resistance to buckling, high ultimate tensile strength, low inflammability, high strength-to-weight ratio, low thermal gradient, ease of shaping, high fatigue resistance, and endurance limit."
+  },
+  {
+    "question": "Why is material selection important in drone airframe design?",
+    "ground_truth_chunks": [38, 39],
+    "ground_truth_answer": "Material selection can affect the entire drone design and its operational capabilities. Different drone tasks and payloads require different material properties."
+  },
+  {
+    "question": "What are the three main parts of the airframe mentioned in the document?",
+    "ground_truth_chunks": [39],
+    "ground_truth_answer": "The three main parts are the frame, landing gear, and gimbal."
+  },
+  {
+    "question": "What is the purpose of landing gear in the drone airframe?",
+    "ground_truth_chunks": [39],
+    "ground_truth_answer": "Landing gear is used to lower the centre of gravity and maintain stability while landing."
+  },
+  {
+    "question": "What factors make up the total weight of the drone?",
+    "ground_truth_chunks": [39],
+    "ground_truth_answer": "The total weight comprises the frame weight, motor weight and quantity, battery, and payload, including sensors and cameras."
+  },
+  {
+    "question": "What are the main design considerations for the hexacopter frame?",
+    "ground_truth_chunks": [40],
+    "ground_truth_answer": "The main considerations are minimizing the drone's weight and ensuring stability. Adequate space must also be provided for the six 15-inch propellers to prevent interference between them."
+  },
+  {
+    "question": "How are motor, propeller, ESC, and battery selection related during drone design?",
+    "ground_truth_chunks": [41],
+    "ground_truth_answer": "Total weight requirements form the basis for selecting motors and propellers capable of producing the required thrust. After selecting the motors, propellers, and ESCs, the battery must be selected to provide the required endurance while meeting motor power requirements at different throttle levels."
+  },
+  {
+    "question": "What were the observed weights and flight characteristics of the X-type and V-type quadcopter frames?",
+    "ground_truth_chunks": [44],
+    "ground_truth_answer": "The X-frame quadcopter weighed 1.3 kg, while the V-frame quadcopter weighed 1.8 kg. The V-frame provided more space for sensors and cameras, while flight trials found the X-frame more stable and efficient."
+  },
+  {
+    "question": "Why is a hexacopter suitable for heavier payloads according to the document?",
+    "ground_truth_chunks": [44],
+    "ground_truth_answer": "Its symmetrical configuration places the centre of gravity at the centre of the frame, and its six motors provide the total thrust required for lifting. Three motors rotate clockwise and three counterclockwise, cancelling overall angular momentum."
+  },
+  {
+    "question": "What is the basic function of a drone propeller?",
+    "ground_truth_chunks": [45],
+    "ground_truth_answer": "A propeller converts rotary motion into linear thrust. Its rotation creates airflow and a pressure difference between its upper and lower surfaces, producing lift."
+  },
+  {
+    "question": "How do clockwise and counterclockwise propellers contribute to drone movement and stability?",
+    "ground_truth_chunks": [45],
+    "ground_truth_answer": "CW and CCW propellers are arranged in pairs so that their angular momentum cancels. By varying their speeds, the drone can hover, ascend, descend, and control yaw, pitch, and roll."
+  },
+  {
+    "question": "What role does the ESC play in controlling drone propellers?",
+    "ground_truth_chunks": [45, 46],
+    "ground_truth_answer": "The ESC changes the supply to the drone motors, varying their RPM and throttle level. The flight controller sends the required signal to the ESC to control each motor and perform the desired manoeuvre."
+  },
+  {
+    "question": "What do the two dimensions in a commercial drone propeller specification A × B represent?",
+    "ground_truth_chunks": [46],
+    "ground_truth_answer": "A represents the total length of the propeller blade from end to end, while B represents the propeller pitch."
+  },
+  {
+    "question": "What is the trade-off between short and long propellers?",
+    "ground_truth_chunks": [46],
+    "ground_truth_answer": "Short propellers require less energy to reach a particular speed, have lower inertia, and allow quicker speed changes. Long propellers generate more upward lift at a given RPM and provide greater hovering stability, but they require more power because they create greater resistance for the motors."
+  },
+  {
+    "question": "How does propeller pitch affect drone performance?",
+    "ground_truth_chunks": [47],
+    "ground_truth_answer": "A higher pitch generates more lift and enables the drone to fly faster at the same RPM, but it also creates greater resistance for the motor, increasing power consumption and draining the battery faster."
+  },
+  {
+    "question": "Why are long propellers with smaller pitch preferred for heavy-lift drones?",
+    "ground_truth_chunks": [47],
+    "ground_truth_answer": "Heavy drones prioritize stability over speed, so heavy-lift drones typically use longer propellers with smaller pitch."
+  },
+  {
+    "question": "How does propeller size relate to motor selection and drone application?",
+    "ground_truth_chunks": [48],
+    "ground_truth_answer": "Blades under eight inches are frequently used for racing and acrobatics and are generally paired with smaller high-kV motors. Larger blades over eight inches are paired with low-kV motors and can be used to carry heavier payloads such as video equipment or agricultural spraying containers."
+  },
+  {
+    "question": "What are the advantages and disadvantages of plastic versus carbon-fibre propellers?",
+    "ground_truth_chunks": [48],
+    "ground_truth_answer": "Plastic propellers are cheaper, flexible, and can absorb impacts better. Carbon-fibre propellers are more costly and less durable, but they reduce vibration and improve flight performance."
+  }
+]

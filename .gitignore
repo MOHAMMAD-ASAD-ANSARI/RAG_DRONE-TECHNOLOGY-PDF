@@ -1,0 +1,88 @@
+# =========================
+# Environment / Secrets
+# =========================
+.env
+.env.*
+!.env.example
+
+# PDF / source documents
+*.pdf
+
+
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# =========================
+# Jupyter
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# Qdrant / Vector Database
+# =========================
+qdrant_storage/
+*.db
+*.sqlite
+*.sqlite3
+
+# =========================
+# Logs
+# =========================
+*.log
+logs/
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================
+# IDE / Editor
+# =========================
+.vscode/
+.idea/
+
+# =========================
+# Temporary files
+# =========================
+*.tmp
+*.temp
+*.bak
+
+# =========================
+# Model / ML cache
+# =========================
+.cache/
+huggingface_cache/
+sentence_transformers/
+
+# =========================
+# Large generated files
+# =========================
+*.bin
+*.pt
+*.pth
+*.onnx
+*.safetensors
+
+# =========================
+# Generated outputs
+# =========================
+outputs/
+results/
+tests/
+evaluation_results/
